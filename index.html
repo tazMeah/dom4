@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Many Coins?</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>Coin Balance: <span>0</span></h1>
+    <main>
+        <form>
+            <label for="howMany">
+                How many? <input type="number" min="1" value="1" id="howMany" required/>
+            </label>
+            <label for="whichCoin">
+                Which coin? <select id="whichCoin">
+                    <option name="penny" value="1">penny</option>
+                    <option name="nickel" value="5">nickel</option>
+                    <option name="dime" value="10">dime</option>
+                    <option name="quarter" value="25">quarter</option>
+                </select>
+            </label>
+            <button type="submit">MAKE MONEY!</button>
+        </form>
+    </main>
+    <div id="purse"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
